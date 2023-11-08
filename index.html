@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Calculadora Científica</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Calculadora Científica</h1>
+    </header>
+    <section>
+        <div class="calculadora">
+            <input type="text" id="display" readonly>
+            <div class="botoes">
+                <button onclick="limpar()">C</button>
+                <button onclick="adicionarTexto('7')">7</button>
+                <button onclick="adicionarTexto('8')">8</button>
+                <button onclick="adicionarTexto('9')">9</button>
+                <button onclick="adicionarOperador('+')">+</button>
+                <button onclick="adicionarTexto('4')">4</button>
+                <button onclick="adicionarTexto('5')">5</button>
+                <button onclick="adicionarTexto('6')">6</button>
+                <button onclick="adicionarOperador('-')">-</button>
+                <button onclick="adicionarTexto('1')">1</button>
+                <button onclick="adicionarTexto('2')">2</button>
+                <button onclick="adicionarTexto('3')">3</button>
+                <button onclick="adicionarOperador('*')">*</button>
+                <button onclick="adicionarTexto('0')">0</button>
+                <button onclick="adicionarOperador('/')">/</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="adicionarDecimal()">.</button>
+                <button onclick="calcularRaizQuadrada()">√</button>
+                <button onclick="calcularPotencia()">x²</button>
+                <button onclick="calcularSeno()">sin</button>
+                <button onclick="calcularCosseno()">cos</button>
+                <button onclick="calcularTangente()">tan</button>
+                <button onclick="adicionarParenteses('(')">(</button>
+                <button onclick="adicionarParenteses(')')">)</button>
+                <button onclick="calcularPorcentagem()">%</button>
+            </div>
+        </div>
+    </section>
+    <script src="calculadora.js"></script>
+</body>
+</html>
